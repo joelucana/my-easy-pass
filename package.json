@@ -1,0 +1,19 @@
+{
+  "name": "my-easy-pass",
+  "version": "1.0.0",
+  "description": "Password generator, easy to write and easy to remember.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joelucana/my-easy-pass.git"
+  },
+  "author": "Joel Lucana",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joelucana/my-easy-pass/issues"
+  },
+  "homepage": "https://github.com/joelucana/my-easy-pass#readme"
+}
