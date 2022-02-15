@@ -48,12 +48,12 @@ makeWord = (setNumber = false) => {
         generateChars(2, false) +
         generateChars(1, true) +
         ( (setNumber)
-            ? String(numberRandom(9, 0))
+            ? String(numberRandom(9, 1))
             : generateChars(1, false)
         )
 }
 
-generatePassAppleId = (groupWords = 1) => {
+generatePass = (groupWords = 1) => {
     groupWords = (groupWords !== undefined && groupWords > 0) ? groupWords : 1
     const positionNumber = numberRandom(groupWords - 1,0)
     const positionUpperCase = numberRandom(groupWords - 1,0)
@@ -70,5 +70,5 @@ generatePassAppleId = (groupWords = 1) => {
 document.getElementById("generate_pass").addEventListener("click", (e) => {
     e.preventDefault()
     const group = 3
-    document.getElementById("generated_text").value = generatePassAppleId(group)
+    document.getElementById("generated_text").value = generatePass(group)
 })
